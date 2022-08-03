@@ -1,0 +1,7 @@
+@mixin flexo ($texto, $justify, $align) {
+    display: flex;
+    text-align: $texto;
+    justify-content: $justify;
+    align-items: $align;
+    
+}

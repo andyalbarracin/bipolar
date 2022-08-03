@@ -1,0 +1,87 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: $font-title;
+    cursor: pointer;
+}
+
+.img-fluid {
+    margin: 3px;
+}
+
+/*Usando Mixin*/
+.explorar-index {
+    margin: 50px;
+    @include flexo (center, space-evenly, center);
+}
+
+.explorar .img-container {
+    width: 100%;
+    height: 100%;
+}
+
+.explorar .texto {
+    text-align: justify;
+    justify-content: center;
+}
+
+.explorar-index h2{
+    margin-top: 1px;
+    font-weight: 800;
+    font-size: 4rem;
+    padding: 10px;
+}
+
+h2{
+    font-size: 4rem;
+    padding: 10px;
+    margin: 2rem;
+}
+
+/*Usando Extend*/
+p{
+    @extend .texto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.img-container {
+    background-image: url("../images/imagen5.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 500px;
+    width: 400px;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+.finalnosotros{
+    background-color: $bgsection;
+}
+
+
+footer p {
+    padding: 5px;
+}

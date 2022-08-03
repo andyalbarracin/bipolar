@@ -1,0 +1,17 @@
+/*USO DEL SELECTOR & PARA ANIDAR CLASES*/
+.card {
+    margin: 5px;
+    width: 80%;
+
+    &.card-img-top {
+        width: auto;
+        height: auto;
+    }
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 10px 15px 21px -3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: 0.5s ease-in;
+}

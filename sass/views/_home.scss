@@ -1,0 +1,64 @@
+.navbar-nav {
+    font-size: 3rem;
+}
+  
+a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: $colorfontmenu;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 0 2px;
+}
+
+header  a:after{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header  a:hover{
+    color: antiquewhite;
+}
+
+header a:hover:after{
+    width: 100%;
+}
+
+
+  /*EXPLORAR*/
+  .explorar {
+      margin: 50px;
+      text-align: center;
+      align-content: center;
+      justify-content: space-evenly;
+  }
+
+  #explorar .img-container {
+      width: 30%;
+      height: 30%;
+  }
+
+  #explorar .texto {
+      text-align: justify;
+      justify-content: center;
+  }
+
+  #explorar h2 {
+      margin-top: 1px;
+  }
+
+  .img-container {
+      background-image: url("../images/imagen5.jpg");
+      background-size: cover;
+      background-position: center center;
+      height: 500px;
+      width: 400px;
+  }
+
+  /*FIN EXPLORAR*/

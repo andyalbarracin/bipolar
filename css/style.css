@@ -1,18 +1,91 @@
-/*FONT ROBOTO*/
+/*Utilities*/
+/*Colores a usar en la web*/
+/*Espaciados*/
+/*Fonts*/
+/*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth; }
 
-body {
-  background-color: #eff3f8;
-  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif; }
+ul {
+  list-style-type: none; }
 
-a* {
+a {
+  text-decoration: none;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer; }
 
+.img-fluid {
+  margin: 3px; }
+
+/*Usando Mixin*/
+.explorar-index {
+  margin: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.explorar .img-container {
+  width: 100%;
+  height: 100%; }
+
+.explorar .texto, .explorar p {
+  text-align: justify;
+  justify-content: center; }
+
+.explorar-index h2 {
+  margin-top: 1px;
+  font-weight: 800;
+  font-size: 4rem;
+  padding: 10px; }
+
+h2 {
+  font-size: 4rem;
+  padding: 10px;
+  margin: 2rem; }
+
+/*Usando Extend*/
+p {
+  font-size: 2rem;
+  font-weight: 600; }
+
+.img-container {
+  background-image: url("../images/imagen5.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px;
+  width: 400px; }
+
+ul li {
+  list-style: none; }
+
+.finalnosotros {
+  background-color: #f2e8cf; }
+
+footer p {
+  padding: 5px; }
+
+/*Este MAPS esta siendo usado en el archivo 
+contacto.html gracias a la clase .btn-adventure*/
+.bg-adventure {
+  background-color: #91162a; }
+
+/*Views*/
+#galeria img:hover {
+  border: green 2px solid;
+  background-color: #000000;
+  transform: scale(1.1, 1.1); }
+
 .navbar-nav {
-  font-size: 1rem; }
+  font-size: 3rem; }
 
 a {
   position: relative;
@@ -39,8 +112,34 @@ header a:hover {
 header a:hover:after {
   width: 100%; }
 
+/*EXPLORAR*/
+.explorar {
+  margin: 50px;
+  text-align: center;
+  align-content: center;
+  justify-content: space-evenly; }
+
+#explorar .img-container {
+  width: 30%;
+  height: 30%; }
+
+#explorar .texto, #explorar p {
+  text-align: justify;
+  justify-content: center; }
+
+#explorar h2 {
+  margin-top: 1px; }
+
+.img-container {
+  background-image: url("../images/imagen5.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 400px; }
+
+/*FIN EXPLORAR*/
+/*Componentes*/
 .carousel-inner img {
-  /* max-height: 850px; */
   height: 85vh; }
 
 .carousel-inner h5 {
@@ -54,16 +153,32 @@ header a:hover:after {
 .slider img {
   height: 70vh; }
 
-.iconos-index a {
-  text-decoration: none;
-  color: white;
-  margin: 10px;
-  font-size: 20px; }
+.btn, .btn-adventure {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px; }
 
-.iconos-index a i:hover {
-  color: #69a7d4;
-  transform: scale(1.3);
-  transition: ease-in-out 0.1s; }
+.btn-primary {
+  background: #386641; }
+
+.btn:hover, .btn-adventure:hover {
+  cursor: pointer;
+  box-shadow: 5px 7px 9px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: 0.5s ease-in;
+  background: #2980b9;
+  color: #fff; }
 
 /*USO DEL SELECTOR & PARA ANIDAR CLASES*/
 .card {
@@ -79,79 +194,40 @@ header a:hover:after {
   position: relative;
   transition: 0.5s ease-in; }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  background: #386641;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s ease all;
-  border-radius: 5px; }
+.iconos-index a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px; }
 
-.btn:hover {
-  cursor: pointer;
-  box-shadow: 5px 7px 9px -3px rgba(0, 0, 0, 0.1);
-  position: relative;
-  transition: 0.5s ease-in;
-  background: #2980b9;
-  color: #fff; }
+.iconos-index a i:hover {
+  color: #69a7d4;
+  transform: scale(1.3);
+  transition: ease-in-out 0.1s; }
 
 iframe {
   padding-left: 10px;
   max-width: 700px; }
 
-/*EXPLORAR*/
-/*EXPLORAR*/
-/*EXPLORAR*/
-.explorar {
-  margin: 50px;
-  text-align: center;
-  align-content: center;
-  justify-content: space-evenly; }
+/*Media Queries*/
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+  .carousel {
+    margin-bottom: 10px; }
+  .carousel-inner img {
+    height: 40vh; }
+  .carousel-inner h5 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #eff3f8; }
+  .slider {
+    margin-top: 50px; }
+  .slider img {
+    height: 70vh; }
+  .carousel-item h5 {
+    color: #91162a; } }
 
-#explorar .img-container {
-  width: 30%;
-  height: 30%; }
-
-#explorar .texto {
-  text-align: justify;
-  justify-content: center; }
-
-#explorar h2 {
-  margin-top: 1px; }
-
-.img-container {
-  background-image: url("../images/imagen5.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 400px; }
-
-/*FIN EXPLORAR*/
-/*FIN EXPLORAR*/
-/*FIN EXPLORAR*/
-.img-fluid {
-  margin: 3px; }
-
-#galeria img:hover {
-  border: green 2px solid;
-  background-color: #000000;
-  transform: scale(1.1, 1.1); }
-
-ul li {
-  list-style: none; }
-
-footer p {
-  padding: 5px; }
-
-/*USO DE VARIABLES*/
-.finalnosotros {
-  background-color: #f2e8cf; }
+@media only screen and (min-width: 720px) and (max-width: 990px) {
+  .carousel {
+    margin-bottom: 10px; }
+  .carousel-item h5 {
+    color: #91162a; } }

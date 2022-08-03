@@ -1,0 +1,14 @@
+/*Este MAPS esta siendo usado en el archivo 
+contacto.html gracias a la clase .btn-adventure*/
+
+$colors: (
+    adventure: $adventure
+);
+
+@each $name,
+$value in $colors{
+    .bg-#{$name}{
+        background-color: $value;
+
+    }
+}

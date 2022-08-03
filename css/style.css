@@ -209,25 +209,7 @@ iframe {
   padding-left: 10px;
   max-width: 700px; }
 
-/*Media Queries*/
-@media only screen and (min-width: 480px) and (max-width: 720px) {
-  .carousel {
-    margin-bottom: 10px; }
-  .carousel-inner img {
-    height: 40vh; }
-  .carousel-inner h5 {
-    font-size: 40px;
-    font-family: sans-serif;
-    color: #eff3f8; }
-  .slider {
-    margin-top: 50px; }
-  .slider img {
-    height: 70vh; }
-  .carousel-item h5 {
-    color: #91162a; } }
+/*Media Queries
 
-@media only screen and (min-width: 720px) and (max-width: 990px) {
-  .carousel {
-    margin-bottom: 10px; }
-  .carousel-item h5 {
-    color: #91162a; } }
+
+@import "./utilities/queries"*/

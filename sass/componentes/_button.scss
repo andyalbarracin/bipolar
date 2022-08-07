@@ -12,11 +12,17 @@
     cursor: pointer;
     text-transform: uppercase;
     transition: 0.3s ease all;
-    border-radius: 5px;
+    border-radius: 5px;    
 }
 
 .btn-primary{
     background: $bgverde;
+}
+
+.btn-final{
+    @extend .btn;
+    @extend .btn-primary;
+    margin-bottom: 15px;
 }
 
 .btn-adventure{

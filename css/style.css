@@ -25,6 +25,9 @@ a {
 .img-fluid {
   margin: 3px; }
 
+.explorar-contacto {
+  margin-top: 6vh; }
+
 /*Usando Mixin*/
 .explorar-index {
   margin: 50px;
@@ -38,7 +41,7 @@ a {
   height: 100%; }
 
 .explorar .texto, .explorar p {
-  text-align: justify;
+  text-align: center;
   justify-content: center; }
 
 .explorar-index h2 {
@@ -47,15 +50,21 @@ a {
   font-size: 4rem;
   padding: 10px; }
 
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 1rem;
+  text-align: center; }
+
 h2 {
   font-size: 4rem;
-  padding: 10px;
   margin: 2rem; }
 
 /*Usando Extend*/
 p {
   font-size: 2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
 
 .img-container {
   background-image: url("../images/imagen5.jpg");
@@ -84,12 +93,12 @@ contacto.html gracias a la clase .btn-adventure*/
   transform: scale(1.1, 1.1); }
 
 .navbar-nav {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 a {
   position: relative;
   text-decoration: none;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   color: grey;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -113,7 +122,7 @@ header a:hover:after {
 
 /*EXPLORAR*/
 .explorar {
-  margin: 50px;
+  margin: 8vh;
   text-align: center;
   align-content: center;
   justify-content: space-evenly; }
@@ -123,11 +132,11 @@ header a:hover:after {
   height: 30%; }
 
 #explorar .texto, #explorar p {
-  text-align: justify;
+  text-align: center;
   justify-content: center; }
 
-#explorar h2 {
-  margin-top: 1px; }
+.explorar h1 {
+  margin-top: 10px; }
 
 .img-container {
   background-image: url("../images/imagen5.jpg");
@@ -137,6 +146,43 @@ header a:hover:after {
   width: 400px; }
 
 /*FIN EXPLORAR*/
+.productos-tienda {
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
+
+.items-tienda {
+  margin-top: 1vh;
+  margin-bottom: 1vh; }
+
+form input {
+  height: 5vh; }
+
+form textarea {
+  height: 10vh; }
+
+form ::placeholder {
+  font-size: 2em;
+  letter-spacing: 0.3em; }
+
+form label {
+  font-size: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.form-check .form-check-input {
+  font-size: 15px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center; }
+
+.form-check .form-check-label {
+  font-size: 2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.form-control-md {
+  margin-right: 10px; }
+
 /*Componentes*/
 .carousel-inner img {
   height: 85vh; }
@@ -147,7 +193,8 @@ header a:hover:after {
   color: #eff3f8; }
 
 .slider {
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 10px; }
 
 .slider img {
   height: 70vh; }
@@ -187,8 +234,8 @@ header a:hover:after {
   margin: 5px;
   width: 80%; }
   .card.card-img-top {
-    width: auto;
-    height: auto; }
+    width: 100%;
+    height: 90%; }
 
 .card:hover {
   cursor: pointer;
@@ -211,3 +258,24 @@ iframe {
   padding: 10px;
   max-width: 700px;
   margin: auto; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  .explorar-contacto {
+    margin-top: 4vh; }
+  h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 2px;
+    margin: 1rem; }
+  h2 {
+    font-size: 2.5rem;
+    margin: 1rem; }
+  p {
+    font-size: 2rem;
+    font-weight: 400; }
+  .carousel-inner img {
+    min-height: 50vh;
+    height: 50%; }
+  .slider img {
+    height: 100%; } }

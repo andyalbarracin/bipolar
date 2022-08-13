@@ -1,0 +1,35 @@
+form input{
+    height: 5vh;
+}
+
+form textarea{
+    height: 10vh;
+}
+
+form ::placeholder{
+    font-size: 2em;
+    letter-spacing: 0.3em;
+}
+
+form label{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-check .form-check-input{
+    font-size: 15px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.form-check .form-check-label{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-control-md{
+    margin-right: 10px;
+}

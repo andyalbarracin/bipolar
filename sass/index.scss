@@ -7,10 +7,14 @@
 @import "./utilities/maps";
 
 
+
+
 /*Views*/
 
 @import "./views/galeria";
 @import "./views/home";
+@import "./views/tienda";
+@import "./views/contacto";
 
 
 /*Componentes*/
@@ -22,5 +26,6 @@
 @import "./componentes/iframe";
 
 
-
+/*MEDIA QUERIES*/
+@import "./utilities/queries";
 
